@@ -12,8 +12,3 @@ $mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_error) {
     die("ERROR: Could not connect. " . $mysqli->connect_error);
 }
-
-echo "Connected successfully";
-
-// Close connection
-$mysqli->close();
